@@ -39,7 +39,7 @@ def train(channel_input_dirs, hyperparameters):
 
 
     for epoch in range(epochs):
-        # reset data iterator and metric at begining of epoch.
+        # reset data iterator and metric at beginning of epoch.
         train_data.reset()
         tic = time.time()
         metric.reset()

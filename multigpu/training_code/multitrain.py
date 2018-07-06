@@ -53,7 +53,6 @@ def train(current_host, hosts, num_cpus, num_gpus,
 
     #Set-up the right batch size
     batch_size *= max(1, len(ctx))
-    batch_size *= max(1, len(hosts))
     
     
 

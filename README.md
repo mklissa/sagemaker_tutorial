@@ -38,4 +38,4 @@ train(current_host, hosts, num_cpus, num_gpus, channel_input_dirs, model_dir, hy
 
 ```
 
-Debugging work with **pdb** by setting a trace in the training loop. Once you run the training script, you will get an interactive session with the script.
+Debugging works with **pdb** by setting a trace in the training loop. Once you run the training script, you will get an interactive session with the script.

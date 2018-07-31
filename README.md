@@ -34,7 +34,8 @@ model_dir='./'
 hyperparameters={'batch_size': 128, 
                   'epochs': 40}
                   
-from source_dir_res18.run import train  # import the train function from the entrypoint that launches the training loop
+from source_dir_res18.run import train  # import the train function from 
+                                        # the entrypoint that launches the training loop
 train(current_host, hosts, num_cpus, num_gpus, channel_input_dirs, model_dir, hyperparameters)
 
 ```

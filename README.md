@@ -2,9 +2,11 @@
 
 This is the code accompanying the following Medium blogposts:
 
-[Getting Started with SageMaker] (https://medium.com/apache-mxnet/getting-started-with-sagemaker-ebe1277484c9)
+[Getting Started with SageMaker](https://medium.com/apache-mxnet/getting-started-with-sagemaker-ebe1277484c9)
 
-https://medium.com/apache-mxnet/leveling-up-on-sagemaker-c7a5a438f0f6
+[Leveling Up on SageMaker](https://medium.com/apache-mxnet/leveling-up-on-sagemaker-c7a5a438f0f6)
+
+[94% Accuracy on Cifar-10 in 10 minutes on SageMaker](https://medium.com/apache-mxnet/94-accuracy-on-cifar-10-in-10-minutes-with-amazon-sagemaker-754e441d01d7)
 
 
 # Debuging SageMaker

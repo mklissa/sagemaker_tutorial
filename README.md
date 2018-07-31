@@ -11,18 +11,14 @@ This is the code accompanying the following Medium blogposts:
 
 # Debuging SageMaker
 
-Currently, debugging SageMaker is not an ideal task. The easiest way to get get through, is by first creating the right conda environment to be used by SageMaker:
+Currently, debugging SageMaker is not an ideal task. The easiest way to get get through, is by first creating the right conda environment to be used by SageMaker. To do so, simply download the *setup.py* and the *debug_setup.sh* files. Afterwards, simply run the bash script with an argument indicating wether you want to install GPU support or CPU support:
 
-```
-conda create -n debug_sage python=2.7
-source activate debug_sage
-pip install sagemaker-container-support
-pip install pip install mxnet-cu90==1.1.0 # remove "-cu90" for CPU-only support
-conda install ipykernel
-source deactivate
+```python
+bash debug_setup.sh gpu
 ```
 
-Once the environment is created, it might take a few minutes so that the Jupyter Notebook recognizes it as a kernel. At which point, we can choose "debug_sage" as our kernel and run the training script by providing the right parameters:
+
+Once the environment is created, it might take a few minutes so that the Jupyter Notebook recognizes it as a kernel. At which point, we can choose it as our kernel and run the training script by providing the right parameters:
 
 ```python
 from multiprocessing import cpu_count
@@ -42,3 +38,4 @@ train(current_host, hosts, num_cpus, num_gpus, channel_input_dirs, model_dir, hy
 
 ```
 
+Debugging work with **pdb** by setting a trace in the training loop. Once you run the training script, you will get an interactive session with the script.

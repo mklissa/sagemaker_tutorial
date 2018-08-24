@@ -44,7 +44,7 @@ Debugging works with **pdb** by setting a trace in the training loop. Once you r
 
 # Using MXBoard
 
-The abiblity to use MXBoard is, as of August 24 2018, not supported. To use this functionnality, we need to write our own `estimator.py` code, which is available [here](https://github.com/mklissa/sagemaker_tutorial/blob/master/estimator.py). You need to use this file to replace the `sagemaker/mxnet/estimator.py`  file contained in your sagemaker installion.
+The abiblity to use MXBoard is, as of August 24 2018, not supported (see this [pull request](https://github.com/aws/sagemaker-python-sdk/pull/349)). To use this functionnality, we need to write our own `estimator.py` code, which is available [here](https://github.com/mklissa/sagemaker_tutorial/blob/master/estimator.py). You need to use this file to replace the `sagemaker/mxnet/estimator.py`  file contained in your sagemaker installion.
 
 Since MXBoard is not installed by default on the Docker image used to train your job, you also need to include.
 

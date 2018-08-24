@@ -62,7 +62,7 @@ You can also use our image which comes with MXNet 1.1.0 and MXBoard. To do so, y
 
 ### Modifying your training python script
 
-We also have to modify our training script by adding the following lines:
+We also have to modify our training script so that the events recorded in the training job instance are uploaded to s3. We do so by adding the following lines:
 
 ```python
 import boto3

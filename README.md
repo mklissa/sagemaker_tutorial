@@ -53,12 +53,12 @@ You can do this either by modifying this [file](https://github.com/aws/sagemaker
 `docker build -t preprod-mxnet:1.1.0-cpu-py2 --build-arg py_version=2
 --build-arg framework_installable=mxnet-1.1.0-py2.py3-none-manylinux1_x86_64.whl -f Dockerfile.cpu .`
 
-To run the previous line, you also need the `sagemaker_mxnet_container-1.0.0.tar.gz` file and the `mxnet-1.1.0-py2.py3-none-manylinux1_x86_64.whl`. For the former, you can get it by following intructions [here](https://github.com/aws/sagemaker-mxnet-container/issues/25). For the latter, you simply to fetch from [here](https://pypi.org/project/mxnet/1.1.0/#files). You can then proceed to upload your image on the internet and use it with your estimator through the `image_name` argument.
+To run the previous line, you also need the `sagemaker_mxnet_container-1.0.0.tar.gz` file and the `mxnet-1.1.0-py2.py3-none-manylinux1_x86_64.whl`. For the former, you can get it by following intructions [here](https://github.com/aws/sagemaker-mxnet-container/issues/25). For the latter, you simply to fetch from [here](https://pypi.org/project/mxnet/1.1.0/#files). You can then proceed to upload your image on the internet and use it with your estimator through the `image_name` argument used by the Estimator.
 
 
 ### Using our image
 
-You can also use our image which comes with MXNet 1.1.0 and MXBoard: 968277166688.dkr.ecr.us-east-1.amazonaws.com/autoaugment:latest
+You can also use our image which comes with MXNet 1.1.0 and MXBoard. To do so, you need to pass this string '968277166688.dkr.ecr.us-east-1.amazonaws.com/autoaugment:latest' to the `image_name` argument used by the Estimator.
 
 ### Modifying your training python script
 

@@ -93,7 +93,7 @@ estimator = MXNetEstimator(entry_point='train.py',
 estimator.fit(inputs,run_tensorboard_locally=True)
 ```
 
-That should do it. Now you can run the following command:
+That should do it. Now you can run the following command in your SageMaker notebook:
 
 `tensorboard --logdir=./logs --host=localhost --port=6007`
 

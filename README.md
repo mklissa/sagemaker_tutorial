@@ -8,6 +8,7 @@ This is the code accompanying the following Medium blogposts:
 
 [94% Accuracy on Cifar-10 in 10 minutes on SageMaker](https://medium.com/apache-mxnet/94-accuracy-on-cifar-10-in-10-minutes-with-amazon-sagemaker-754e441d01d7)
 
+[SageMaker Automatic Model Tuner: CIFAR10 in 3m47s on single GPU](https://medium.com/p/db890aea85fd/edit)
 
 # Debuging SageMaker
 

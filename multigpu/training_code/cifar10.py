@@ -59,7 +59,7 @@ class Cifar10():
 
         self.train_iter_args = shared_args.copy()
         self.train_iter_args.update({
-            'path_imgrec': os.path.join(self.data_path, "cifar/train.rec"),
+            'path_imgrec': os.path.join(self.data_path, "train.rec"),
             'shuffle': True,
             'rand_crop': True,
             'rand_mirror': True,
@@ -72,7 +72,7 @@ class Cifar10():
         self.train_iter = mx.io.ImageRecordIter(**self.train_iter_args)
 
         self.test_iter_args = shared_args.copy()
-        self.test_iter_args.update({'path_imgrec': os.path.join(self.data_path, "cifar/test.rec")})
+        self.test_iter_args.update({'path_imgrec': os.path.join(self.data_path, "test.rec")})
         self.test_iter = mx.io.ImageRecordIter(**self.test_iter_args)
 
     def return_dataloaders(self):

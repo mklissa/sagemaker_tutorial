@@ -13,7 +13,6 @@ from mxnet.gluon.model_zoo import vision as models
 #additional imports
 from cifar10 import Cifar10
 from resnet_config import WideResNet
-from gluon import GluonLearner
 from converters import DataIterLoader
 import random
 import numpy as np
